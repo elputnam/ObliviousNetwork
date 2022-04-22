@@ -25,5 +25,9 @@ function draw() {
   push();
   rotate(random(180, 270));
   cone(width*.25, height*.25, int(random(5,10)), 10);
-  pop();
+  pop()
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
